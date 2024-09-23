@@ -12,34 +12,27 @@ import java.util.Scanner;
  */
 public class RaraException extends ArithmeticException { 
 
-    public RaraException(String s){
+   public RaraException(String s) {
         super(s);
     }
-   
-       public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        try {
-            System.out.println("Masukkan angka pertama: ");
-            int num1 = sc.nextInt(); 
-            System.out.println("Masukkan angka kedua: ");
-            int num2 = sc.nextInt(); 
 
-            // Melakukan perkalian
-            int result = multiply(num1, num2); // Memanggil metode perkalian
-            System.out.println("Hasil perkalian: " + result);
-        } catch (ArithmeticException e) {
-            System.err.println("FAILED !!!" + e.getMessage());
-        } catch (Exception e) {
-            System.err.println("Input harus menggunakan angka.");
-       
+    public static void kaliTryCatch(int a, int b) {
+        try {
+            if (a > 0 && b > 0 && a > Integer.MAX_VALUE / b) {
+                throw new RaraException("FAILED: Overflow pada perkalian");  // Cek apakah hasil perkalian akan overflow
+          
+            }
+    
+            int hasil = a * b;  // Melakukan perkalian
+            System.out.println("Hasil: " + hasil);
+        } catch (RaraException ex) {
+            System.out.println(ex.getMessage());
         }
     }
- public static int multiply(int a, int b) {
-      
-        if (a != 0 && b != 0 && (Integer.MAX_VALUE / a < b)) {
-            throw new ArithmeticException("Hasil perkalian terlalu besar.");
-        }
-        return a * b; 
+
+    public static void main(String[] args) {
+        RaraException.kaliTryCatch(2000000000, 2); //overflow
+   //     RaraException.kaliTryCatch(10, 5); 
     }
   
 }
