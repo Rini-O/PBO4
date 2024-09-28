@@ -17,7 +17,12 @@ CRUD adalah singkatan dari empat operasi dasar yang dapat dilakukan pada data:
 - **Update**: Memperbarui data yang sudah ada. 🔄
 - **Delete**: Menghapus data yang tidak diperlukan. ❌
 
-Contoh implementasi CRUD dalam pemrograman berorientasi objek dapat dilihat pada kelas `DataMahasiswa`.
+ Implementasi CRUD dalam pemrograman berorientasi objek dapat dilihat pada method :
+  - `tambah()`: Menambahkan data mahasiswa ke dalam database.
+  - `tampil()`: Menampilkan semua data mahasiswa dari database.
+  - `hapus()`: Menghapus data mahasiswa berdasarkan NIM.
+  - `update()`: Memperbarui data mahasiswa berdasarkan NIM.
+  - `menu()`: Menampilkan menu utama dan mengarahkan ke metode yang sesuai.
 
 ### 2. Try Catch 🛡️
 
