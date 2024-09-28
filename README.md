@@ -28,8 +28,15 @@ CRUD adalah singkatan dari empat operasi dasar yang dapat dilakukan pada data:
 
 **Try Catch** adalah struktur yang digunakan untuk menangani pengecualian dalam program. Dengan menggunakan `try`, kita dapat mencoba mengeksekusi kode yang mungkin menghasilkan kesalahan, dan dengan `catch`, kita dapat menangani kesalahan tersebut.
 
+Implermentasi Try Catch 
+- kelas `TryCatch1` berisi metodh `main` dan metode `multiply`.
+- Dalam metode `main`, dgunakan untuk memasukkan dua angka.
+- Blok `try-catch` digunakan untuk menangani kesalahan input dan kondisi aritmatika.
+
+Pada method 'multiply' memeriksa apakah hasil perkalian akan melebihi Integer.MAX_VALUE . jika hasil perkalian melebihi batas, maka program akan melempar ArithmeticException, untuk memberitahu bahwa hasil perkalian terlalu besar.
+
 ### 3. Throws 🚀
-Kata kunci throws digunakan dalam deklarasi metode untuk menunjukkan bahwa metode tersebut dapat melempar pengecualian tertentu. Ini memungkinkan pemanggil metode untuk menangani pengecualian tersebut ⚠️
+Kata kunci throws digunakan dalam deklarasi metodh. untuk menunjukkan bahwa metodh tersebut dapat melempar pengecualian tertentu. Ini memungkinkan pemanggil metode untuk menangani pengecualian tersebut ⚠️
 
  ### 4. Custom Exception 🎭
 Custom Exception adalah pengecualian yang dibuat oleh pengguna untuk menangani kondisi khusus dalam aplikasi. Dengan membuat kelas pengecualian sendiri, kita dapat memberikan informasi yang lebih spesifik tentang kesalahan yang terjadi 🧩
