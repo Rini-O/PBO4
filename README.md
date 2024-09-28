@@ -47,7 +47,13 @@ Implementasi Throws :
  ### 4. Custom Exception 🎭
 Custom Exception adalah pengecualian yang dibuat oleh pengguna untuk menangani kondisi khusus dalam aplikasi. Dengan membuat kelas pengecualian sendiri, kita dapat memberikan informasi yang lebih spesifik tentang kesalahan yang terjadi 🧩
 
+Implementasi Custom Exception :
+- **Kelas `RaraException`** mengextends `ArithmeticException` dan digunakan untuk menangani kondisi ketika overflow terjadi. 
+- **Konstruktor** digunakan untuk menerima pesan kesalahan yang akan ditampilkan ketikaexception dilempar.
+  - Program memeriksa apakah hasil perkalian akan melebihi `Integer.MAX_VALUE`.
+  - Jika ya, program melempar `RaraException` dengan mencetak pesan "FAILED: Overflow pada perkalian".
+  - Jika tidak, program melanjutkan untuk melakukan perkalian dan mencetak hasilnya.
+    
 ## 📝 Kesimpulan
-Dalam laporan ini, membahas konsep dasar pemrograman berorientasi objek, khususnya terkait dengan operasi CRUD, penanganan kesalahan menggunakan Try Catch, serta penggunaan Throws dan Custom Exception. Memahami konsep-konsep ini sangat penting untuk membangun aplikasi yang robust dan dapat menangani berbagai kondisi kesalahan dengan baik. Dengan penerapan teknik-teknik ini, pengembangan perangkat lunak menjadi lebih terstruktur dan efisien. 🌟
-
+Dalam laporan ini, membahas konsep dasar pemrograman berorientasi objek, khususnya terkait dengan operasi CRUD, penanganan kesalahan menggunakan Try Catch, serta penggunaan Throws dan Custom Exception.  CRUD membantu dalam mengelola data dengan mudah melalui operasi dasar seperti menambah, melihat, memperbarui, dan menghapus data. Try Catch berguna untuk menangkap kesalahan yang terjadi saat program berjalan, sehingga aplikasi tidak langsung berhenti. Dengan menggunakan Throws, dapat memberi tahu bahwa suatu metode mungkin akan menyebabkan kesalahan, sehingga dapat diatasi. sedangkan Custom Exception memungkinkan kita membuat kesalahan yang sesuai dengan kebutuhan.
 Terima kasih telah membaca laporan ini! Semoga bermanfaat! 🎉
